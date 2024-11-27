@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login button {
+  background-color: #b26e35;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.editoras {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.editora-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.banner {
+  background-image: url('banner.png');
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  font-size: 1.8rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+}
+
+.lancamentos, .destaques {
+  padding: 2rem;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.livros-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+}
+
+.livros-slider img {
+  width: 150px;
+}
+
+.destaques h2 {
+  margin-bottom: 1rem;
+}
+
+.livros-destaques {
+  display: flex;
+  gap: 2rem;
+}
+
+.livro-destaque {
+  background-color: #a46d47;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.livro-destaque img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.livro-destaque h3 {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.livro-destaque button {
+  background-color: #fff;
+  color: #a46d47;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.livro-destaque button:hover {
+  background-color: #fff;
+  color: #a46d47;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: #a46d47;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #824a30;
+}

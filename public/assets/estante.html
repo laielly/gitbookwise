@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Estante Virtual</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #35424a;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #46b8da;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #35424a;
+        }
+
+        .shelf {
+            margin-top: 2rem;
+        }
+
+        .bookshelf {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Espaçamento entre os livros */
+        }
+
+        .book {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.2s;
+            width: 150px; /* Largura fixa para os livros */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .book p {
+            color: #555;
+        }
+
+        .book:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        button {
+            background-color: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 0.5rem; /* Espaçamento superior para os botões */
+        }
+
+        button:hover {
+            background-color: #46b8da;
+        }
+
+        /* Estilo para a lista de livros que quero ler */
+        .input-container {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-container input {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+         
+            <li><a href="profile.html">Perfil</a></li> <!-- Link para a página de perfil -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Minha Estante Virtual</h1>
+        
+        <div class="shelf">
+            <h2>Já Li</h2>
+            <div class="bookshelf" id="ja-li">
+                <div class="book">
+                    <img src="book1.jpg" alt="Capa do Livro 1">
+                    <h3>Nome do Livro 1</h3>
+                    <button onclick="window.location.href='avaliacao.html'">Avaliar</button>
+                </div>
+                <div class="book">
+                    <img src="book2.jpg" alt="Capa do Livro 2">
+                    <h3>Nome do Livro 2</h3>
+                    <button onclick="window.location.href='avaliacao.html'">Avaliar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <h2>Lendo</h2>
+            <div class="bookshelf" id="lendo">
+                <div class="book">
+                    <img src="book3.jpg" alt="Capa do Livro 3">
+                    <h3>Nome do Livro 3</h3>
+                    <button onclick="window.location.href='comentarios.html'">Adicionar Comentário</button>
+                </div>
+                <div class="book">
+                    <img src="book4.jpg" alt="Capa do Livro 4">
+                    <h3>Nome do Livro 4</h3>
+                    <button onclick="window.location.href='comentarios.html'">Adicionar Comentário</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shelf">
+            <h2>Quero Ler</h2>
+            <div class="bookshelf" id="quero-ler">
+                <div id="lista-quero-ler"></div>
+                <div class="input-container">
+                    <input type="text" id="livro-input" placeholder="Digite o nome do livro...">
+                    <button onclick="adicionarLivro()">Adicionar à Lista</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function adicionarLivro() {
+            var livroNome = document.getElementById('livro-input').value;
+            if (livroNome) {
+                var lista = document.getElementById('lista-quero-ler');
+                var livroDiv = document.createElement('div');
+                livroDiv.className = 'book';
+                livroDiv.innerHTML = `<h3>${livroNome}</h3>
+                                     <button onclick="removerLivro(this)">Remover</button>`;
+                lista.appendChild(livroDiv);
+                document.getElementById('livro-input').value = ''; // Limpa o campo de entrada
+            }
+        }
+
+        function removerLivro(button) {
+            var livroDiv = button.parentElement;
+            livroDiv.remove(); // Remove o livro da lista
+        }
+    </script>
+</body>
+</html>

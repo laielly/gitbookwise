@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/pages-profile.html" />
+
+	<title>Profile | AdminKit Demo</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<style>
+	
+	body {
+    background-color: #D2B48C; /* Tan */
+    color: #4B3D2C; /* Brown */
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #4B3D2C; /* Brown */
+}
+
+button {
+    background-color: #A0522D; /* Sienna */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8B4513; /* SaddleBrown */
+}
+
+	.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.item input {
+    margin-top: 5px;
+}
+.sidebar-nav .sidebar-item .sidebar-link .align-middle {
+    color: #fff;
+
+	#sidebar {
+    background-color: #a06439;
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar" style="background-color: #a06439;">
+    <div class="sidebar-content js-simplebar">
+        <a class="sidebar-brand" href="index.html">
+            <span class="align-middle">Bookwise</span>
+        </a>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-header">
+                Pages
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="index.html">
+                    <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Sair</span>
+                </a>
+            </li>
+
+			<li class="sidebar-item active" style="background-color: #a06439;">
+				<a class="sidebar-link" href="pages-profile.html">
+					<i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile </span>
+				</a>
+			</li>
+			
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="addbook.html">
+                    <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Adcionar livro</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="estante.html">
+                    <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Estante </span>
+                </a>
+            </li>
+
+            
+</nav>
+
+		<div class="main">
+		
+				<a class="sidebar-toggle js-sidebar-toggle">
+     
+        </a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					
+						<h1 class="h3 d-inline align-middle">Perfil</h1>
+						
+     
+  </a>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Detalhes do perfil</h5>
+								</div>
+								<div class="card-body text-center">
+									<img src="img/avatars/avatar-4.jpg" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128" height="128" />
+									<h5 class="card-title mb-0">Christina Mason</h5>
+								
+
+									<div>
+										<a class="btn btn-primary btn-sm" href="#">Follow</a>
+										
+									</div>
+								</div>
+								<hr class="my-0" />
+								<div class="card-body">
+									<h5 class="h6 card-title">Bio</h5>
+									
+								</div>
+								<hr class="my-0" />
+								<div class="card-body">
+									<h5 class="h6 card-title">Amigos</h5>
+									<ul class="list-unstyled mb-0">
+								
+								</div>
+								<hr class="my-0" />
+								
+							</div>
+						</div>
+
+						<div class="col-md-8 col-xl-9">
+							<div class="card">
+								<div class="container">
+									<div class="item lidos"><span>Lidos</span><p>40</p> </div >
+									<div class="item quero-ler"><span>Quero Ler</span><p>5</p></div>
+									<div class="item resenha"><span>Lendo</span><p>12</p></div>
+									
+								</div>
+								
+									
+									
+									
+							
+									</div>
+
+									<hr />
+									
+									<hr />
+									<div class="d-flex align-items-start">
+										<img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2" alt="Christina Mason">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">1h ago</small>
+											<strong>Christina Mason</strong>  ⭐ Avaliou É assim que acaba <br />
+
+											<small class="text-muted">Today 6:35 pm</small>
+										</div>
+									</div>
+
+									<hr />
+									
+
+									<hr />
+									<div class="d-flex align-items-start">
+										<img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2" alt="William Harris">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">1d ago</small>
+											<strong>Christina Mason</strong> Escreveu uma resenha de A voz de Archie  <strong></strong><br />
+											<p>A Voz de Archer, da autora Mia Sheridan, é um romance comovente que explora temas de trauma, cura e o poder do amor redentor. A história gira em torno de Layla, uma jovem que luta para superar as memórias dolorosas de um evento trágico em seu passado, e Archer, um homem recluso que carrega suas próprias cicatrizes emocionais.
+
+												Layla se muda para uma pequena cidade costeira no Maine em busca de um novo começo. Lá, ela conhece Archer, um recluso misterioso que vive em uma cabana isolada. Intrigada por sua aura melancólica, Layla se sente atraída por Archer, apesar de sua relutância em se abrir para o mundo.
+												
+												Com o passar do tempo, Layla e Archer desenvolvem um vínculo profundo, baseado na compreensão mútua e na compaixão. Layla ajuda Archer a enfrentar seus traumas e a encontrar sua voz novamente, enquanto Archer oferece a Layla um amor incondicional e um refúgio seguro.
+												
+												A Voz de Archer é um romance emocionante e tocante que vai te prender do início ao fim. A autora tece uma história comovente sobre a importância da família, da amizade e do amor como forças curativas. Os personagens são complexos e cativantes, e a história é rica em detalhes e descrições vívidas.
+												
+												Se você procura um romance que te faça rir, chorar e refletir, A Voz de Archer é a escolha perfeita. É um livro que vai ficar com você muito tempo depois de você terminar de lê-lo.
+												
+												Pontos fortes:
+												
+												Personagens complexos e cativantes
+												História comovente e emocionante
+												Temas importantes como trauma, cura e amor
+												Escrita rica e descrições vívidas
+												Pontos fracos:
+												
+												Alguns clichês do gênero romance
+												O ritmo da história pode ser um pouco lento em alguns momentos
+												Recomendação:
+												
+												A Voz de Archer é um romance altamente recomendado para fãs de romance, drama e histórias inspiradoras. É um livro que vai te tocar profundamente e te fazer acreditar no poder do amor para curar até mesmo as feridas mais profundas.</p>
+											<small class="text-muted">Yesterday 3:12 pm</small>
+
+											<div class="d-flex align-items-start mt-1">
+												<a class="pe-3" href="#">
+                <img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2" alt="Christina Mason">
+              </a>
+												<div class="flex-grow-1">
+													<div class="border text-sm text-muted p-2 mt-1">
+														Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<hr />
+									<div class="d-flex align-items-start">
+										<img src="img/avatars/avatar-4.jpg" width="36" height="36" class="rounded-circle me-2" alt="Christina Mason">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">1d ago</small>
+											<strong>Christina Mason</strong> ✅ Já leu A empregada<br />
+											<small class="text-muted">Yesterday 2:43 pm</small>
+										</div>
+									</div>
+
+									<hr />
+									<div class="d-flex align-items-start">
+										<img src="img/avatars/avatar.jpg" width="36" height="36" class="rounded-circle me-2" alt="Charles Hall">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">1d ago</small>
+											<strong>Christina Mason</strong>✅Já leu O segredo da empregada<strong></strong><br />
+											<small class="text-muted">Yesterdag 1:51 pm</small>
+										</div>
+									</div>
+
+									<hr />
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
